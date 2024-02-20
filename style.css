@@ -88,7 +88,7 @@ nav ul li a:hover::after {
 
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: #f0f0f0;
 }
 
 .row {
@@ -104,6 +104,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  background-size: cover;
 }
 
 .about-col-2 {
@@ -224,6 +225,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+  overflow: hidden;
 }
 
 .work {
@@ -320,7 +322,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: #f0f0f0;
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -366,6 +368,19 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
+  color: #fff;
+}
+
+.copyright a {
+  color: white;
+}
+
+.copyright a:active {
+  color: white;
+}
+
+.copyright a:visited {
+  color: white;
 }
 
 .copyright .fa-solid {
@@ -380,6 +395,7 @@ nav .fa-solid {
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(images/mobile\ background.png);
+    background-size: cover;
   }
 
   .header-text {
