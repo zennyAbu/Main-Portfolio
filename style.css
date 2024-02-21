@@ -119,7 +119,7 @@ nav ul li a:hover::after {
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 0 30px;
 }
 
 .tab-links {
@@ -197,16 +197,23 @@ nav ul li a:hover::after {
 
 .skills-list div a {
   text-decoration: none;
-  color: #fff;
-  font-size: 12px;
+  color: #d83ae1;
+  font-size: 15px;
   margin-top: 20px;
   display: inline-block;
+}
+
+.skills-list div:hover a {
+  color: rgb(26, 108, 208);
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .skills-list div:hover {
   background: #d83ae1;
   transform: translateY(-10px);
 }
+
 /*---------------------------portfolio--------------------------------------*/
 #portfolio {
   padding: 50px 0;
@@ -394,8 +401,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/mobile\ background.png);
-    background-size: cover;
+    background-image: url(images/phone-background.png);
   }
 
   .header-text {
@@ -440,17 +446,26 @@ nav .fa-solid {
     font-size: 40px;
   }
 
+  .zenny {
+    width: 300px;
+    height: 350px;
+  }
+
+  #about {
+    padding-bottom: 30px;
+  }
+
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
 
   .about-col-1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .about-col-2 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .tab-links {
@@ -465,5 +480,19 @@ nav .fa-solid {
 
   .copyright {
     font-size: 14px;
+  }
+
+  .skills-list div i {
+    font-size: 30px;
+  }
+
+  .skills-list div h2 {
+    font-size: 23px;
+    font-weight: 500;
+  }
+
+  .work img {
+    width: 100%;
+    height: 250px;
   }
 }
